@@ -42,6 +42,7 @@ const bubbleSort = (array) => {
 const updateUi = () => {
   const numStr = document.getElementById("numbers").value
   const ints = parseInt(numStr, 10)
+    output.innerText = ""
   if (isValid(numStr, ints)) {
     let array = Array.from(String(ints), Number)
     output.innerText = bubbleSort(array)
